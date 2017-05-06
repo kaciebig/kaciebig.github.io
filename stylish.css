@@ -1,9 +1,16 @@
-.whatever { 
-  background: #bada55; 
-  min-height:100%; 
+.everything { 
+  background: #c7aa31; 
+  min-height:100%;
+  color: white;
+  margin: 0;
+  max-width: 100%;
 }
+
 .wedding {
   text-align: center;
-  padding-top: 200px;
   font-family: sans-serif;
+}
+
+.top img {
+  width: 100%;
 }
