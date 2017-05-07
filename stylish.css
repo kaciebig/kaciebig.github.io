@@ -1,16 +1,21 @@
 .everything { 
-  background: #c7aa31; 
   min-height:100%;
-  color: white;
   margin: 0;
-  max-width: 100%;
-}
-
-.wedding {
+  -webkit-print-color-adjust: exact;
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Playfair Display', sans-serif;
 }
 
-.top img {
+.everything img {
+  max-width: 100%;
   width: 100%;
 }
+
+.top {
+  padding: 0 0 18px 0;
+}
+
+/* 
+  font-family: 'Fauna One', serif; 
+  background: #c7aa31;
+*/
