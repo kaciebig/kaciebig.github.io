@@ -8,33 +8,7 @@
   <link rel="stylesheet" href="/stylish.css" />
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <!--link href="https://fonts.googleapis.com/css?family=Fauna+One" rel="stylesheet"-->
-  <script src="https://unpkg.com/moment@2.18.1/min/moment.min.js"></script>
-  <script>
-    var wedding = new Date('10/14/2017 10:1 AM');
-    var timer;
-
-    var today = new Date();
-
-    var a = moment().endOf('month');
-    var b = moment().today;
-
-    // days left in this month only
-    var daysLeft = a.diff(b, 'days');
-    var monthsLeft = (wedding.getMonth() - today.getMonth());
-       
-    function showRemaining() {
-        if (daysLeft < 1 && monthsLeft <= 0) {
-          return;
-        }
-        else if (monthsLeft > 0) {
-          document.getElementById('countdown').innerHTML = monthsLeft + ' months (and ' + daysLeft + ' days) to go&hellip;';
-        } else {
-          document.getElementById('countdown').innerHTML = daysLeft + ' days to go&hellip;';
-        }
-    }
-
-    timer = setInterval(showRemaining, 1000);
-  </script>
+  <script src="/lib/moment.min.js"></script>
 </head>
 <body class="everything">
   <div class="top">
@@ -46,5 +20,14 @@
     <img src="/img/2.jpg" alt="i love my boo">
     
   </div>
+  <script>
+    var weddingDay = moment('2017-05-19 16-08:00');
+    var daysToGo = weddingDay.diff(new Date(), 'days');
+
+    if (daysToGo > 0) {
+      var humanToGo = moment.duration(daysToGo, 'days').humanize();
+      document.getElementById('countdown').innerHTML = '<small>' + humanToGo + ' to go&hellip;</small>';
+    }
+  </script>
 </body>
 </html>
