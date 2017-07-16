@@ -46,33 +46,41 @@ span.x4:before, i.x4:before
 /*------------------------------------*\
 	HEADER
 
-        background-image: url('/assets/img/2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+       
 
+    
 \*------------------------------------*/
 
 header .container-fluid
 {
+    /*
     background-image: url('/assets/img/2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    */
     padding-top: 36px;
+    background-color: goldenrod;
+    
 }
+
+/*
+.container-fluid {
+    background-color: #ae5a41;
+}
+*/
 
 .hamburger
 {
     font-size: 2.3em;
-    color: #FFF;
+    color: white;
 }
 
 .hamburger:hover
 {
-  color: #000;
-  cursor: pointer;
+    color: #000;
+    cursor: pointer;
 }
-
 
 .logo
 {
@@ -157,7 +165,12 @@ header .container-fluid
 
 .gallery
 {
-    background-color: #dddddd;
+    background-color: #c3cb71;
+}
+
+.not-gallery
+{
+    background-color: goldenrod;
 }
 
 .prefooter .container-fluid
@@ -187,7 +200,7 @@ header .container-fluid
 
 footer
 {
-    background-color: rgba(36, 50, 59, 1);
+    background-color: #559e83;
     padding-top: 2em;
     padding-bottom: 1.2em;
 }

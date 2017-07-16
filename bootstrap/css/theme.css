@@ -280,12 +280,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #36c4c5;
+  color: #011f4b;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #268889;
+  color: #1b85b8;
   text-decoration: underline;
 }
 a:focus {
@@ -357,7 +357,7 @@ h6,
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
   line-height: 1.1;
-  color: #555555;
+  color: white;
 }
 h1 small,
 h2 small,
