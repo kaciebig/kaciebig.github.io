@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, h6
 h1, h2, h3, h4, h5, h6
 {
     margin-bottom: 1.1em;
+    margin-top: 1.8em;
 }
 
 .features,
@@ -46,9 +47,9 @@ span.x4:before, i.x4:before
 /*------------------------------------*\
 	HEADER
 
-       
 
-    
+
+
 \*------------------------------------*/
 
 header .container-fluid
@@ -61,7 +62,7 @@ header .container-fluid
     */
     padding-top: 36px;
     background-color: goldenrod;
-    
+
 }
 
 /*
